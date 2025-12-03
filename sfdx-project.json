@@ -1,0 +1,44 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app/core",
+      "default": true,
+      "package": "S2S Integration Core",
+      "versionName": "ver 1.0",
+      "versionNumber": "1.0.0.NEXT",
+      "dependencies": []
+    },
+    {
+      "path": "force-app/ui",
+      "package": "S2S Integration UI",
+      "versionName": "ver 1.0",
+      "versionNumber": "1.0.0.NEXT",
+      "dependencies": [
+        {
+          "package": "S2S Integration Core",
+          "versionNumber": "1.0.0.LATEST"
+        }
+      ]
+    },
+    {
+      "path": "force-app/admin",
+      "package": "S2S Integration Admin",
+      "versionName": "ver 1.0",
+      "versionNumber": "1.0.0.NEXT",
+      "dependencies": [
+        {
+          "package": "S2S Integration Core",
+          "versionNumber": "1.0.0.LATEST"
+        },
+        {
+          "package": "S2S Integration UI",
+          "versionNumber": "1.0.0.LATEST"
+        }
+      ]
+    }
+  ],
+  "name": "S2S Integration Module",
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "65.0"
+}

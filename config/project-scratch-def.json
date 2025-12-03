@@ -1,0 +1,44 @@
+{
+  "orgName": "S2S Integration Module",
+  "edition": "Enterprise",
+  "hasSampleData": false,
+  "features": [
+    "API",
+    "Communities",
+    "DevelopmentWave",
+    "LightningServiceConsole",
+    "PlatformEncryption",
+    "ServiceCloud",
+    "Sites"
+  ],
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    },
+    "securitySettings": {
+      "sessionSettings": {
+        "sessionTimeout": "TwelveHours",
+        "sessionTimeoutWarning": true
+      },
+      "passwordPolicies": {
+        "lockoutInterval": 15,
+        "maxLoginAttempts": 5,
+        "minimumPasswordLength": 8,
+        "passwordComplexity": 3,
+        "passwordExpiration": 90,
+        "passwordHistory": 5
+      }
+    },
+    "apiSettings": {
+      "enableApiAccess": true
+    },
+    "encryptionSettings": {
+      "enableDeterministicEncryption": false,
+      "enableEncryptFieldHistory": false,
+      "enableEventBusEncryption": false
+    }
+  }
+}
