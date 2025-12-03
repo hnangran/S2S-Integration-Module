@@ -36,8 +36,9 @@ This document outlines security considerations, compliance requirements, and thr
 - **Encrypted Channels:** Use Salesforce's encrypted API endpoints
 
 #### Data at Rest
-- **Credential Encryption:** Encrypt stored credentials using Salesforce Shield Platform Encryption
-- **Configuration Encryption:** Encrypt sensitive configuration data
+- **Credential Encryption:** Credentials encrypted and managed by Salesforce Named Credentials/External Credentials (no custom encryption needed)
+- **No Credential Storage:** Credentials are NOT stored in custom objects - all stored in Named Credentials/External Credentials
+- **Configuration Encryption:** Encrypt sensitive configuration data (if needed)
 - **Audit Log Encryption:** Encrypt audit trail data
 
 #### Data Masking
@@ -50,10 +51,13 @@ This document outlines security considerations, compliance requirements, and thr
 ### 3. Credential Management
 
 #### Secure Storage
-- **Named Credentials:** Use Salesforce Named Credentials for OAuth credentials
+- **Named Credentials:** **REQUIRED** - Use Salesforce Named Credentials for OAuth credentials (primary method)
+- **External Credentials:** Support for External Credentials for advanced authentication scenarios
+- **No Custom Object Storage:** **CRITICAL** - Never store OAuth tokens, refresh tokens, consumer keys, secrets, or any credentials in custom objects
 - **No Hardcoding:** Never hardcode credentials in code
-- **Credential Rotation:** Support for periodic credential updates
-- **Credential Vaulting:** Integration with external credential vaults (optional)
+- **Credential Rotation:** Automatic rotation handled by Named Credentials/External Credentials
+- **Credential Vaulting:** Integration with external credential vaults via External Credentials (optional)
+- **Best Practice Compliance:** Using Named Credentials ensures compliance with Salesforce security best practices
 
 #### Credential Access
 - **Least Privilege:** Limit access to credential management

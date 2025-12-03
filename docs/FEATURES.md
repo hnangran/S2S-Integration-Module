@@ -1,21 +1,32 @@
 # S2S Integration Module - Features Document
 
 ## Overview
-The S2S (Salesforce-to-Salesforce) Integration Module enables seamless data synchronization and integration between multiple Salesforce organizations. This document outlines all features and capabilities of the solution, including core features and additional enhancements.
+The S2S (Salesforce-to-Salesforce) Integration Module enables seamless data synchronization and integration between multiple Salesforce organizations with **advanced complex sync logic capabilities**. This solution provides sophisticated data synchronization features that go beyond standard Salesforce Connect, including full support for custom objects, complex relationships, and advanced transformation patterns.
+
+### Key Differentiators from Salesforce Connect
+- **Custom Object Support:** Full support for custom objects and custom fields (Salesforce Connect primarily supports standard objects)
+- **Complex Relationships:** Advanced relationship traversal and synchronization (lookups, master-detail, self-referential)
+- **Complex Sync Logic:** Multi-step transformations, conditional sync, cross-object lookups, and custom sync patterns
+- **Flexible Mapping:** Configurable object and field mappings with advanced transformation rules
+- **Secure Credential Management:** Uses Salesforce Named Credentials and External Credentials (no credential storage in custom objects)
+
+This document outlines all features and capabilities of the solution, including core features and additional enhancements.
 
 ## Core Features
 
 ### 1. Integrate with Salesforce Orgs
-**Description:** The module provides the ability to establish and manage connections with multiple Salesforce organizations.
+**Description:** The module provides the ability to establish and manage connections with multiple Salesforce organizations using Salesforce's secure credential management features.
 
 **Key Capabilities:**
 - Connect to external Salesforce orgs using OAuth 2.0 authentication
+- **Uses Salesforce Named Credentials and External Credentials** - credentials stored securely by Salesforce, NOT in custom objects
 - Support for multiple org connections simultaneously
-- Store and manage connection credentials securely
+- **Secure Credential Management:** All OAuth tokens, refresh tokens, and secrets managed through Named Credentials/External Credentials
 - Support for both production and sandbox environments
 - Connection health monitoring and validation
-- Automatic token refresh for long-running integrations
-- Support for Named Credentials and Connected Apps
+- Automatic token refresh for long-running integrations (handled by Named Credentials)
+- Support for Connected Apps with OAuth 2.0
+- **No Credential Storage in Custom Objects:** Follows Salesforce security best practices
 
 **User Stories:**
 - As an administrator, I want to connect to multiple Salesforce orgs so that I can synchronize data across them
@@ -43,16 +54,34 @@ The S2S (Salesforce-to-Salesforce) Integration Module enables seamless data sync
 
 ---
 
-### 3. Configurable Object and Field Mappings
-**Description:** Flexible configuration system for mapping objects and fields between source and target Salesforce orgs to facilitate data flow.
+### 3. Configurable Object and Field Mappings with Complex Sync Logic
+**Description:** Flexible configuration system for mapping objects and fields between source and target Salesforce orgs with **advanced complex sync logic capabilities**. Unlike Salesforce Connect, this solution fully supports custom objects, complex relationships, and sophisticated transformation patterns.
 
 **Key Capabilities:**
 - Visual mapping interface for objects and fields
-- Support for standard and custom objects
-- Field-level mapping configuration
-- Data transformation rules (e.g., value mapping, formulas, concatenation)
-- Filter criteria for selective data synchronization
-- Support for lookup and master-detail relationships
+- **Full Custom Object Support:** Complete support for custom objects and custom fields (key differentiator from Salesforce Connect)
+- **Complex Relationship Support:** Advanced relationship traversal including:
+  - Lookup relationships (standard and custom)
+  - Master-detail relationships
+  - Self-referential relationships
+  - Multi-level relationship traversal (e.g., Account → Contacts → Opportunities → Products)
+  - Cross-object lookups and references
+- Field-level mapping configuration with advanced transformations
+- **Complex Data Transformation Rules:**
+  - Multi-step transformations
+  - Formula-based transformations
+  - Cross-object lookups
+  - Data type conversion (automatic and manual)
+  - Value mapping and translation
+  - Concatenation and splitting
+  - Conditional transformations based on field values
+- **Complex Sync Logic:**
+  - Conditional sync based on field values
+  - Relationship depth configuration
+  - Custom sync scripts and Apex hooks
+  - Multi-object sync orchestration
+  - Dependency-based sync ordering
+- Filter criteria for selective data synchronization (SOQL-based)
 - Mapping templates for common use cases
 - Import/export mapping configurations
 - Version control for mapping configurations

@@ -2,7 +2,14 @@
 
 ## High-Level Use Case
 
-The S2S Integration Module addresses the business need for **bi-directional or uni-directional data synchronization between multiple Salesforce organizations**. This is commonly required in scenarios such as:
+The S2S Integration Module addresses the business need for **bi-directional or uni-directional data synchronization between multiple Salesforce organizations with complex sync logic, custom object support, and advanced relationship handling**. Unlike Salesforce Connect, this solution provides:
+
+- **Full Custom Object Support:** Complete synchronization of custom objects and custom fields
+- **Complex Relationships:** Advanced relationship traversal and synchronization
+- **Complex Sync Logic:** Multi-step transformations, conditional sync, and custom patterns
+- **Secure Credential Management:** Uses Salesforce Named Credentials/External Credentials (no credential storage in custom objects)
+
+This is commonly required in scenarios such as:
 
 ### Primary Use Cases
 

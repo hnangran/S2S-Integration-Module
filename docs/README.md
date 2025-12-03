@@ -34,26 +34,38 @@ This directory contains comprehensive documentation for the S2S (Salesforce-to-S
 | PACKAGING_ARCHITECTURE.md | ✅ Complete | Initial version |
 | DOCUMENTATION_ROADMAP.md | ✅ Complete | Initial version |
 | EXECUTIVE_SUMMARY.md | ✅ Complete | Initial version |
+| **TECHNICAL_DESIGN/data-model.md** | ✅ Complete | Initial version |
+
+## Technical Design Documents
+
+### Completed
+- **[Data Model](./TECHNICAL_DESIGN/data-model.md)** - Complete data model with custom objects, fields, and relationships
+- **[Credential Management](./TECHNICAL_DESIGN/CREDENTIAL_MANAGEMENT.md)** - Secure credential management using Named Credentials and External Credentials
+
+### In Progress
+- API Design Document
+- Integration Patterns Document
+- Error Handling Design
 
 ## Next Steps
 
 Based on the architecture recommendations, the following documents should be created:
 
-### Phase 1 (Essential)
+### Phase 1 (Essential) - In Progress
+- ✅ Data Model Document
 - System Architecture Document
-- Data Model Document
+- API Design Document
+- Integration Patterns Document
+
+### Phase 2 (Important)
 - Installation Guide
 - Configuration Guide
 - Administrator Guide
-
-### Phase 2 (Important)
 - Data Flow Diagrams
-- API Design Document
-- Integration Patterns Document
 - Troubleshooting Guide
 - Error Handling Design
 
-See [ARCHITECTURE_RECOMMENDATIONS.md](./ARCHITECTURE_RECOMMENDATIONS.md) for the complete list and priorities.
+See [DOCUMENTATION_ROADMAP.md](./DOCUMENTATION_ROADMAP.md) for the complete prioritized list.
 
 ## Contributing
 
