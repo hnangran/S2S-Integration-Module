@@ -10,16 +10,18 @@ This directory contains comprehensive documentation for the S2S (Salesforce-to-S
 - **[SECURITY_COMPLIANCE.md](./SECURITY_COMPLIANCE.md)** - Security, compliance, and threat detection
 - **[ARCHITECTURE_RECOMMENDATIONS.md](./ARCHITECTURE_RECOMMENDATIONS.md)** - Recommended architecture and documentation structure
 - **[PACKAGING_ARCHITECTURE.md](./PACKAGING_ARCHITECTURE.md)** - Scratch org requirements and packaging strategy
+- **[DOCUMENTATION_ROADMAP.md](./DOCUMENTATION_ROADMAP.md)** - Complete documentation roadmap and priorities
 - **[EXECUTIVE_SUMMARY.md](./EXECUTIVE_SUMMARY.md)** - High-level overview for stakeholders
 
 ## Quick Start
 
 1. **New to the project?** Start with [USE_CASE_ANALYSIS.md](./USE_CASE_ANALYSIS.md) to understand the business context
 2. **Understanding features?** Read [FEATURES.md](./FEATURES.md) for all features and capabilities
-3. **Setting up development?** See [PACKAGING_ARCHITECTURE.md](./PACKAGING_ARCHITECTURE.md) for scratch org and packaging setup
-4. **Security concerns?** See [SECURITY_COMPLIANCE.md](./SECURITY_COMPLIANCE.md)
-5. **Architecture planning?** Check [ARCHITECTURE_RECOMMENDATIONS.md](./ARCHITECTURE_RECOMMENDATIONS.md)
-6. **Executive overview?** Review [EXECUTIVE_SUMMARY.md](./EXECUTIVE_SUMMARY.md)
+3. **What documentation is needed?** Check [DOCUMENTATION_ROADMAP.md](./DOCUMENTATION_ROADMAP.md) for complete roadmap
+4. **Setting up development?** See [PACKAGING_ARCHITECTURE.md](./PACKAGING_ARCHITECTURE.md) for scratch org and packaging setup
+5. **Security concerns?** See [SECURITY_COMPLIANCE.md](./SECURITY_COMPLIANCE.md)
+6. **Architecture planning?** Check [ARCHITECTURE_RECOMMENDATIONS.md](./ARCHITECTURE_RECOMMENDATIONS.md)
+7. **Executive overview?** Review [EXECUTIVE_SUMMARY.md](./EXECUTIVE_SUMMARY.md)
 
 ## Document Status
 
@@ -30,6 +32,7 @@ This directory contains comprehensive documentation for the S2S (Salesforce-to-S
 | SECURITY_COMPLIANCE.md | ✅ Complete | Initial version |
 | ARCHITECTURE_RECOMMENDATIONS.md | ✅ Complete | Initial version |
 | PACKAGING_ARCHITECTURE.md | ✅ Complete | Initial version |
+| DOCUMENTATION_ROADMAP.md | ✅ Complete | Initial version |
 | EXECUTIVE_SUMMARY.md | ✅ Complete | Initial version |
 
 ## Next Steps
